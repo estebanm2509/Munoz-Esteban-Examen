@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+	  xmlns:f="http://java.sun.com/jsf/core"
+	  xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+<title>Insert title here</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h:dataTable value="#{vistaInicial.pedidos}" var="pedido">
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.numero}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.fecha.toString()}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.nombreCliente}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.subtotal}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.total}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.observaciones}
+			</h:column>
+			<h:column>
+				<f:facet name="header">Numero</f:facet>
+				#{pedido.numero}
+			</h:column>
+		</h:dataTable>
+	</h:form>
+</h:body>
+</html>
